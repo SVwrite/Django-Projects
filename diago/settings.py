@@ -31,9 +31,9 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'diago.tickets',
-    'diago.users',
-    'diago.team',
+    'tickets',
+    'users',
+    'team',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',

@@ -11,17 +11,12 @@ class CustomUserAdmin(UserAdmin):
     fieldsets = (
         *UserAdmin.fieldsets,
         (
-            'User Role',
-            {
-                'fields':(
-                    'is_team_leader',
-                    'is_team_member'
-                )
+            'Advance Options', {
+                'classes': ('wide', 'extrapretty'),
+                'fields': ('role', 'team')
             }
-        )
+        ),
     )
 
 
 admin.site.register(User, CustomUserAdmin)
-
-
